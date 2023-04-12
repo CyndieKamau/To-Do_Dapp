@@ -102,7 +102,7 @@ hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ cat package.json
   "author": "Cyndie Kamau",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "4.1.3",
+    "bootstrap": "4.6.2",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^2.0.2",
