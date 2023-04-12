@@ -84,6 +84,40 @@ Commands:
 
 ### 3. Created a `package.json` file for the dependencies;
 
+```
+hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ nano package.json
+hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ cat package.json 
+{
+  "name": "to-do-dapp",
+  "version": "1.0.0",
+  "description": "Blockchain Todo List Powered By Ethereum",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && sexit 1"
+  },
+  "author": "Cyndie Kamau",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "4.1.3",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "lite-server": "^2.3.0",
+    "nodemon": "^1.17.3",
+    "truffle": "5.0.5",
+    "truffle-contract": "3.0.6"
+  }
+}
+hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ 
+
+```
+
+
+
 
 
 
