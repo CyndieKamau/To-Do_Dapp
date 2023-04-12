@@ -2,7 +2,7 @@
 
 This repo is my codebase on a simple To-Do list Dapp deployed on the Ethereum Network.
 
-SmartContract is written using Solidity.
+SmartContract is written using Solidity v0.5.0.
 
 ## Dependencies and Toolkits;
 
@@ -183,11 +183,11 @@ Summary
 
 ```
 
-## N.B. Truffle migrations are JavaScript files that describe the process of deploying your smart contracts. 
+### N.B. Truffle migrations are JavaScript files that describe the process of deploying your smart contracts. 
 
-## They are located in the `migrations` dir of the truffle project.
+### They are located in the `migrations` dir of the truffle project.
 
-## The first migration file is usually `1_initial_migration.js`. It deploys the `Migrations.sol` contract to keep track of the deployment process.
+### The first migration file is usually `1_initial_migration.js`. It deploys the `Migrations.sol` contract to keep track of the deployment process.
 
 
 
