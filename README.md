@@ -46,6 +46,44 @@ Node v19.7.0
 ```
 
 
+## Creating my workspace environment
+
+### 1. Cloned into my repo "To-Do_Dapp", changed directory to it;
+
+```
+hp@Cyndie:~/Desktop/Eth$ git clone https://github.com/CyndieKamau/To-Do_Dapp.git
+Cloning into 'To-Do_Dapp'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.63 KiB | 555.00 KiB/s, done.
+hp@Cyndie:~/Desktop/Eth$ cd To-Do_Dapp/
+
+```
+
+### 2. Initialized a new truffle project;
+
+```
+hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ truffle init
+
+✔ Preparing to download
+✔ Downloading
+✔ Cleaning up temporary files
+✔ Setting up box
+
+Unbox successful. Sweet!
+
+Commands:
+
+  Compile:        truffle compile
+  Migrate:        truffle migrate
+  Test contracts: truffle test
+
+```
+
+### 3. Created a `package.json` file for the dependencies;
+
 
 
 
