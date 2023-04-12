@@ -116,6 +116,79 @@ hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$
 
 ```
 
+## N.B To Compile the Smart Contract;
+
+```
+hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ truffle compile
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/ToDoList.sol...
+Writing artifacts to ./build/contracts
+
+```
+
+## To deploy our smart contract on our local Ethereum node in Ganache;
+
+```
+hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ truffle migrate
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      5777
+> Block gas limit: 6721975
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xe38060564752e28542c9c793332bdc1901dca48adb6345c1772a46bb954143a4
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x4C2F2C5A1ee4a2f75BFe597F8838403642cBE7D1
+   > account:             0x32AE80AD390BcB4E890af966B98695D2f6a7AA45
+   > balance:             99.99584222
+   > gas used:            207889
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00415778 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00415778 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'ToDoList'
+   --------------------
+   > transaction hash:    0xfc675e88d95681f4f2f0bd224ee331b1e72441903209bb3b8c481f938312038d
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x367494FfF34d2D3e20802eFbdF8eB0D7428161c1
+   > account:             0x32AE80AD390BcB4E890af966B98695D2f6a7AA45
+   > balance:             99.99377384
+   > gas used:            103419
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00206838 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00206838 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.00622616 ETH
+
+```
+
+## N.B. Truffle migrations are JavaScript files that describe the process of deploying your smart contracts. 
+
+## They are located in the `migrations` dir of the truffle project.
+
+## The first migration file is usually `1_initial_migration.js`. It deploys the `Migrations.sol` contract to keep track of the deployment process.
+
 
 
 
