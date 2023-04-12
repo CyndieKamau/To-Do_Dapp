@@ -183,13 +183,54 @@ Summary
 
 ```
 
-### N.B. Truffle migrations are JavaScript files that describe the process of deploying your smart contracts. 
+**N.B.** Truffle migrations are JavaScript files that describe the process of deploying your smart contracts. 
 
-### They are located in the `migrations` dir of the truffle project.
+They are located in the `migrations` dir of the truffle project.
 
-### The first migration file is usually `1_initial_migration.js`. It deploys the `Migrations.sol` contract to keep track of the deployment process.
+The first migration file is usually `1_initial_migration.js`. It deploys the `Migrations.sol` contract to keep track of the deployment process.
 
 
+## Interacting with The smart contract on the Truffle console;
+
+```
+hp@Cyndie:~/Desktop/Eth/To-Do_Dapp$ truffle console
+truffle(development)> todolist = await ToDoList.deployed()
+undefined
+truffle(development)> todolist
+TruffleContract {
+  constructor: [Function: TruffleContract] {
+    _constructorMethods: {
+      setProvider: [Function: setProvider],
+      new: [Function: new],
+      at: [Function: at],
+      deployed: [Function: deployed],
+      defaults: [Function: defaults],
+......
+truffle(development)> todolist.address
+'0xAe3E3f48B68c0cB670963f95707A92Beab5178E4'
+truffle(development)> task = await todolist.tasks_map(1)
+undefined
+truffle(development)> task
+Result {
+  '0': BN {
+    negative: 0,
+    words: [ 1, <1 empty item> ],
+    length: 1,
+    red: null
+  },
+  '1': 'This is a default task to finish when you deploy this smart contract the first time.',
+  '2': false,
+  task_id: BN {
+    negative: 0,
+    words: [ 1, <1 empty item> ],
+    length: 1,
+    red: null
+  },
+  task_to_do: 'This is a default task to finish when you deploy this smart contract the first time.',
+  completed: false
+}
+
+```
 
 
 
